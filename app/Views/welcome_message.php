@@ -18,6 +18,10 @@
       padding:0 5% 10vh;
     }
 
+    .d-hide{
+      display:none;
+    }
+
   @media (max-width: 768px) {
     .hero {
       align-items: center;
@@ -47,6 +51,10 @@
     .hero p {
       font-size: 1rem;
     }
+
+    .wcu-icon{
+      display: inline-flex;
+    }
   }
 </style>
 </head>
@@ -56,7 +64,10 @@
 <nav id="main-nav">
   <a href="<?= base_url('/') ?>" class="logo-wrap">
     <!-- <div class="logo-icon">GT</div> -->
-    <div class="logo-icon1"><img src="<?= base_url('logo.png') ?>" width="50" alt="GhomanITSolutions Logo"></div>
+    <div class="logo-icon1">
+      <img src="<?= base_url('logow.png') ?>" class="imgw" width="50" alt="GhomanITSolutions Logo">
+      <img src="<?= base_url('logob.png') ?>" class="imgb" width="50" alt="GhomanITSolutions Logo">
+    </div>
     <span class="logo-text">Ghoman<strong>IT </strong>Solutions</span>
   </a>
   <div class="nav-center">
@@ -72,8 +83,8 @@
   <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
   <a href="<?= base_url('/') ?>" class="drawer-logo">
     <!-- <div class="logo-icon">GT</div> -->
-    <div class="logo-icon1"><img src="<?= base_url('logo.png') ?>" width="50" alt="GhomanIT Logo"></div>
-    <span>Ghoman<strong>IT</strong>Solutions</span>
+    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="50" alt="GhomanIT Logo"></div>
+    <span>Ghoman<strong>IT </strong>Solutions</span>
   </a>
   <ul class="drawer-links">
     <li><a class="drawer-link" href="#home">Home</a></li>
@@ -210,7 +221,7 @@
 
 
 <!-- WHY CHOOSE US -->
-<section class="wcu-section" id="why-choose-us">
+<section class="wcu-section" id="why-choose-us" style="background-image: linear-gradient(135deg, rgba(8, 13, 13, 0.78), rgba(8, 13, 13, 0.68)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
   <div class="wcu-header" data-reveal="up">
     <div class="eyebrow">Why Choose Us</div>
     <h2>Why Choose <span style="color:var(--teal)">Us</span></h2>
@@ -224,7 +235,11 @@
 
       <div class="wcu-row" data-reveal="right" data-delay="100">
         <div class="wcu-text-block">
-          <div class="wcu-title">Experience</div>
+          <div class="wcu-title">Experience
+            <div class="wcu-icon icon-blue d-hide">
+              <svg viewBox="0 0 32 32"><rect x="4" y="4" width="24" height="18" rx="2"/><line x1="4" y1="22" x2="28" y2="22"/><circle cx="16" cy="10" r="3"/><line x1="10" y1="16" x2="22" y2="16"/></svg>
+            </div>
+          </div>
           <div class="wcu-desc">Over 12 years of delivering enterprise-grade IT solutions across 40+ countries, with a proven track record of success.</div>
         </div>
         <div><!-- icon is in center --></div>
@@ -232,7 +247,11 @@
 
       <div class="wcu-row" data-reveal="right" data-delay="200">
         <div class="wcu-text-block">
-          <div class="wcu-title">Products</div>
+          <div class="wcu-title">Products
+            <div class="wcu-icon icon-gray d-hide">
+              <svg viewBox="0 0 32 32"><circle cx="16" cy="12" r="5"/><path d="M6 26c0-6 20-6 20 0"/><line x1="16" y1="6" x2="16" y2="3"/><line x1="22" y1="9" x2="24" y2="7"/><line x1="10" y1="9" x2="8" y2="7"/></svg>
+            </div>
+          </div>
           <div class="wcu-desc">Battle-tested, scalable products engineered with modern architecture that evolves with your business needs.</div>
         </div>
         <div></div>
@@ -240,7 +259,11 @@
 
       <div class="wcu-row" data-reveal="right" data-delay="300">
         <div class="wcu-text-block">
-          <div class="wcu-title">Approach</div>
+          <div class="wcu-title">Approach
+            <div class="wcu-icon icon-green d-hide">
+              <svg viewBox="0 0 32 32"><rect x="4" y="6" width="24" height="18" rx="2"/><line x1="4" y1="12" x2="28" y2="12"/><line x1="10" y1="17" x2="22" y2="17"/><line x1="10" y1="21" x2="18" y2="21"/></svg>
+            </div>
+          </div>
           <div class="wcu-desc">Agile, client-first methodology that keeps you informed, aligned, and in control at every stage of the project.</div>
         </div>
         <div></div>
@@ -286,7 +309,11 @@
       <div class="wcu-row right-row" data-reveal="left" data-delay="100">
         <div><!-- icon is in center --></div>
         <div class="wcu-text-block">
-          <div class="wcu-title">Pricing</div>
+          <div class="wcu-title">Pricing
+            <div class="wcu-icon icon-red d-hide">
+              <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="10"/><line x1="16" y1="10" x2="16" y2="16"/><line x1="16" y1="16" x2="20" y2="20"/><circle cx="16" cy="16" r="2" fill="white" stroke="none"/></svg>
+            </div>
+          </div>
           <div class="wcu-desc">Transparent, competitive pricing with no hidden fees. Choose a plan that fits your budget and scale anytime.</div>
         </div>
       </div>
@@ -294,7 +321,11 @@
       <div class="wcu-row right-row" data-reveal="left" data-delay="200">
         <div></div>
         <div class="wcu-text-block">
-          <div class="wcu-title">Delivery</div>
+          <div class="wcu-title">Delivery
+            <div class="wcu-icon icon-yellow d-hide">
+              <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="8"/><circle cx="16" cy="16" r="3" stroke-width="1.5"/><line x1="16" y1="4" x2="16" y2="8"/><line x1="16" y1="24" x2="16" y2="28"/><line x1="4" y1="16" x2="8" y2="16"/><line x1="24" y1="16" x2="28" y2="16"/></svg>
+            </div>
+          </div>
           <div class="wcu-desc">On-time delivery guaranteed with sprint-based milestones, weekly demos, and zero surprise delays.</div>
         </div>
       </div>
@@ -302,7 +333,11 @@
       <div class="wcu-row right-row" data-reveal="left" data-delay="300">
         <div></div>
         <div class="wcu-text-block">
-          <div class="wcu-title">Support</div>
+          <div class="wcu-title">Support
+            <div class="wcu-icon icon-teal d-hide">
+              <svg viewBox="0 0 32 32"><path d="M16 4 L28 10 L28 18 C28 23 22 27 16 29 C10 27 4 23 4 18 L4 10 Z"/><polyline points="10,16 14,20 22,12" stroke-width="2.5"/></svg>
+            </div>
+          </div>
           <div class="wcu-desc">24/7 dedicated support with rapid SLA response times, proactive monitoring, and a team that genuinely cares.</div>
         </div>
       </div>
@@ -364,7 +399,7 @@
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testi-section" id="testimonials">
+<section class="testi-section" id="testimonials" style="background-image: linear-gradient(135deg, rgba(8, 13, 13, 0.78), rgba(8, 13, 13, 0.68)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
   <div class="text-center">
     <div class="eyebrow" data-reveal="fade">Client Stories</div>
     <h2 class="section-title">What Our <span>Clients Say</span></h2>
@@ -621,7 +656,7 @@
     <div>
       <a href="<?= base_url('/') ?>" class="foot-logo">
         <!-- <div class="logo-icon">GT</div> -->
-         <div class="logo-icon1"><img src="<?= base_url('logo.png') ?>" width="50"  alt="GhomanITSolutions Logo"></div>
+         <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="50"  alt="GhomanITSolutions Logo"></div>
         <span class="foot-logo-text">Ghoman<strong>IT </strong>Solutions</span>
       </a>
       <p class="foot-desc">Empowering businesses with intelligent technology. From AI to cloud infrastructure, we build systems that move industries forward.</p>
