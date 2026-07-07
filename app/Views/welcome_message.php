@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>"/>
+<link rel="stylesheet" href="<?= base_url('css/styles.ribbon.css') ?>"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
   .hero{
       min-height:100vh;
@@ -15,7 +17,8 @@
       background-position: center top;
       position:relative;overflow:hidden;
       display:flex;align-items:flex-end;
-      padding:0 5% 10vh;
+      padding:0 5% 15vh;
+      top: 33px;
     }
 
     .d-hide{
@@ -60,19 +63,56 @@
 </head>
 <body>
 
+<!-- TOP RIBBON / OFFICES BAR -->
+<div class="offices-bar">
+  <div class="container">
+    <div class="offices-bar-inner">
+      <div class="offices-bar-left">
+        <span class="offices-bar-item">
+          <span class="offices-bar-label">CAN</span> : +1 (587) 736-2288
+        </span>
+        <span class="offices-bar-sep">|</span>
+        <span class="offices-bar-item">
+          <span class="offices-bar-label">IND</span> : +91 83604 22303
+        </span>
+        <span class="offices-bar-sep">|</span>
+        <span class="offices-bar-item">
+          <i class="fas fa-paper-plane" style="color:#06b6d4;margin-right:5px;"></i>
+          <a href="mailto:hello@ghoman.ca" class="offices-email">hello@ghoman.ca</a>
+        </span>
+      </div>
+      <div class="offices-bar-right">
+        <a href="#" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="offices-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="offices-social" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- NAV -->
 <nav id="main-nav">
   <a href="<?= base_url('/') ?>" class="logo-wrap">
     <!-- <div class="logo-icon">GT</div> -->
     <div class="logo-icon1">
-      <img src="<?= base_url('logow.png') ?>" class="imgw" width="50" alt="GhomanITSolutions Logo">
-      <img src="<?= base_url('logob.png') ?>" class="imgb" width="50" alt="GhomanITSolutions Logo">
+      <img src="<?= base_url('logow.png') ?>" class="imgw" width="60" alt="GhomanITSolutions Logo">
+      <img src="<?= base_url('logob.png') ?>" class="imgb" width="60" alt="GhomanITSolutions Logo">
     </div>
     <span class="logo-text">Ghoman<strong>IT </strong>Solutions</span>
   </a>
-  <div class="nav-center">
-    <a href="#contact" class="btn-quotes">Get Quotes</a>
+  <div class="nav-center" aria-label="Primary navigation">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#technologies" class="nav-link">Technologies</a>
+    <a href="#clients" class="nav-link">Clients</a>
+    <a href="#contact" class="nav-link">Contact</a>
+
   </div>
+
   <div class="hamburger" id="hamburger">
     <span></span><span></span><span></span>
   </div>
@@ -83,7 +123,7 @@
   <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
   <a href="<?= base_url('/') ?>" class="drawer-logo">
     <!-- <div class="logo-icon">GT</div> -->
-    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="50" alt="GhomanIT Logo"></div>
+    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60" alt="GhomanIT Logo"></div>
     <span>Ghoman<strong>IT </strong>Solutions</span>
   </a>
   <ul class="drawer-links">
@@ -204,7 +244,6 @@
       </div>
     </div>
     <div class="about-content" data-reveal="left">
-      <div class="eyebrow">Why Choose Us</div>
       <h2 class="section-title">We Build Technology That <span>Scales With You</span></h2>
       <p class="section-sub">From early-stage startups to Fortune 500 enterprises, our solutions are engineered for clarity, performance, and growth — without the technical debt.</p>
       <div class="feature-pills">
@@ -223,7 +262,6 @@
 <!-- WHY CHOOSE US -->
 <section class="wcu-section" id="why-choose-us" style="background-image: linear-gradient(135deg, rgba(8, 13, 13, 0.78), rgba(8, 13, 13, 0.68)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
   <div class="wcu-header" data-reveal="up">
-    <div class="eyebrow">Why Choose Us</div>
     <h2>Why Choose <span style="color:var(--teal)">Us</span></h2>
     <p>We combine deep expertise with cutting-edge technology to deliver solutions that truly make a difference.</p>
   </div>
@@ -656,7 +694,7 @@
     <div>
       <a href="<?= base_url('/') ?>" class="foot-logo">
         <!-- <div class="logo-icon">GT</div> -->
-         <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="50"  alt="GhomanITSolutions Logo"></div>
+         <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60"  alt="GhomanITSolutions Logo"></div>
         <span class="foot-logo-text">Ghoman<strong>IT </strong>Solutions</span>
       </a>
       <p class="foot-desc">Empowering businesses with intelligent technology. From AI to cloud infrastructure, we build systems that move industries forward.</p>
@@ -684,7 +722,7 @@
     <div class="foot-col">
       <h5>Contact</h5>
       <ul>
-        <li><a href="<?= base_url('/') ?>">ghomanitsolutions@gmail.com</a></li>
+        <li><a href="<?= base_url('/') ?>">hello@ghoman.ca</a></li>
         <li><a href="<?= base_url('/') ?>">+1 (587) 736-2288</a></li>
         <li><a href="<?= base_url('/') ?>">2836 36 Ave NW, Edmonton, AB T6T 0H7</a></li>
         <li><a href="https://attendopay.com/">Support Portal - Attendopay</a></li>

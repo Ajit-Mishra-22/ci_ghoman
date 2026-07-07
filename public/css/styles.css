@@ -76,7 +76,8 @@ body {
 
 nav {
     position: fixed;
-    top: 0;
+    top: var(--nav-ribbon-offset, 34px);
+
     left: 0;
     right: 0;
     z-index: 200;
@@ -99,6 +100,71 @@ nav.scrolled .logo-text {
 nav.scrolled .hamburger span {
     background: var(--text-dark);
 }
+
+/* Mobile: default to white navbar (even before scroll) */
+@media(max-width:900px) {
+    nav {
+        background: var(--white);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, .08);
+    }
+
+    nav .logo-text {
+        color: var(--text-dark);
+    }
+
+    nav .hamburger span {
+        background: var(--text-dark);
+    }
+
+    /* Keep the white logo variant visible on mobile navbar */
+    nav .imgw {
+        display: block;
+    }
+    nav .imgb {
+        display: none;
+    }
+}
+
+
+
+/* Desktop menu is shown, hamburger is hidden */
+.hamburger {
+    display: none;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .92rem;
+    padding: 0 .75rem;
+    line-height: 1;
+    white-space: nowrap;
+    transition: color .2s;
+}
+
+nav.scrolled .nav-link {
+    color: var(--text-dark);
+}
+
+.nav-link:hover {
+    color: var(--teal-light);
+}
+
+/* Mobile: show hamburger + hide full desktop links */
+@media(max-width:900px){
+    .hamburger{display:flex;}
+    .nav-center{position:absolute; left:50%; transform:translateX(-50%);}
+    .nav-link{display:none;}
+}
+
+/* Extra safety: never show hamburger on desktop */
+@media(min-width:901px){
+    .hamburger{display:none !important;}
+}
+
+
+
 
 /* Default state (no scroll) */
 nav .imgw {
@@ -153,9 +219,11 @@ nav.scrolled .imgb {
 
 .nav-center {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 36%;
+    /* transform: translateX(-50%); */
 }
+
+
 
 .about-img-card,
 .about-visual,
