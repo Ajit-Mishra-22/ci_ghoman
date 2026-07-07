@@ -744,6 +744,10 @@
   </div>
 </footer>
 
+<a href="https://wa.me/15877362288" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+
 <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script src="<?= base_url('js/main.js') ?>"></script>

@@ -118,10 +118,10 @@ nav.scrolled .hamburger span {
 
     /* Keep the white logo variant visible on mobile navbar */
     nav .imgw {
-        display: block;
+        display: none !important;
     }
     nav .imgb {
-        display: none;
+        display: block !important;
     }
 }
 
@@ -1097,6 +1097,35 @@ footer p.foot-desc {
     transition: transform .2s;
 }
 
+/* WhatsApp floating button (left bottom, like back-to-top button) */
+.whatsapp-float {
+    z-index: 250;
+    background: #25D366;
+    color: var(--white);
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, .35);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.whatsapp-float i {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(37, 211, 102, .45);
+}
+
 .drawer-close,
 .mode-toggle {
     cursor: pointer;
@@ -1455,6 +1484,18 @@ footer p.foot-desc {
     .svc-card h3 {
         font-size: 1.1rem;
     }
+
+    .whatsapp-float {
+        bottom: 1.2rem;
+        left: 1.2rem;
+        width: 38px;
+        height: 38px;
+    }
+
+    .whatsapp-float i {
+        font-size: 1rem;
+    }
+
 
     .hero {
         padding: 90px 5% 50px;
