@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="<?= base_url('css/styles.ribbon.css') ?>"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
+  .services-cards-wrap {
+    background-image: url('<?= base_url('services_ai_bg.jpg') ?>');
+    
+  }
   .hero{
       min-height:100vh;
       background:url('<?= base_url('hero-bg.jpeg') ?>');
@@ -59,6 +63,20 @@
       display: inline-flex;
     }
   }
+
+  .team-avatar {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    margin: 0px auto 20px;
+}
 </style>
 </head>
 <body>
@@ -82,7 +100,7 @@
         </span>
       </div>
       <div class="offices-bar-right">
-        <a href="#" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" class="offices-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="offices-social" aria-label="X"><i class="fab fa-x-twitter"></i></a>
@@ -154,14 +172,12 @@
   </div>
 </section>
 
-<!-- SERVICES BAND -->
-<div class="services-hero-band" data-reveal="up">
-  <h2>Services We Offer</h2>
-  <p>Explore our creative solutions that make a real difference.</p>
-</div>
-
-<div class="services-cards-wrap">
-  <div class="services-grid" id="services">
+<div class="services-cards-wrap" id="services">
+  <div class="services-heading" data-reveal="up">
+    <h2>Services We Offer</h2>
+    <p>Explore our creative solutions that make a real difference.</p>
+  </div>
+  <div class="services-grid">
     <div class="svc-card not-revealed" data-reveal="up" data-delay="100">
       <div class="svc-icon-wrap">
         <svg viewBox="0 0 48 48"><circle cx="24" cy="18" r="10"/><line x1="24" y1="28" x2="24" y2="38"/><line x1="8" y1="38" x2="40" y2="38"/><line x1="8" y1="16" x2="14" y2="20"/><line x1="40" y1="16" x2="34" y2="20"/></svg>
@@ -258,6 +274,60 @@
   </div>
 </section>
 
+
+<!-- TEAM -->
+<section class="team-section" id="team">
+  <div class="text-center">
+    <div class="eyebrow">Our People</div>
+    <h2 class="section-title">Meet the <span>Team</span></h2>
+    <p class="section-sub">Talented people behind our products and client success.</p>
+  </div>
+
+  <div class="team-grid">
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo">
+        <img src="<?= base_url('teams/team_cto.jpeg') ?>" alt="Ajit Mishra">
+      </div>
+      <div class="team-card-body">
+        <h3 class="team-name">Ajit Mishra</h3>
+        <div class="team-role">CTO</div>
+        <p class="team-note">Drives technology vision and innovation with strategic leadership, ensuring scalable solutions and measurable impact.</p>
+      </div>
+    </div>
+
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo"><img src="<?= base_url('teams/team_md.jpeg') ?>" alt="Amrinder Singh"></div>
+      <div class="team-card-body">
+        <h3 class="team-name">Amrinder Singh</h3>
+        <div class="team-role">MD</div>
+        <p class="team-note">Champions brand expansion and market leadership through innovative strategies that convert opportunities into results.</p>
+      </div>
+    </div>
+
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo">
+        <img src="<?= base_url('teams/team_iot.jpeg') ?>" alt="Ravinder Singh">
+      </div>
+      <div class="team-card-body">
+        <h3 class="team-name">Ravinder Singh</h3>
+        <div class="team-role">IOT Expert</div>
+        <p class="team-note">Drives IoT innovation, transforming data from devices into actionable, measurable outcomes.</p>
+      </div>
+    </div>
+
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo">
+        <img src="<?= base_url('teams/team_development.jpeg') ?>" alt="Developer Teams">
+      </div>
+      <div class="team-card-body">
+        <h3 class="team-name">Development Teams</h3>
+        <div class="team-role">Engineering</div>
+        <p class="team-note">Leads social media strategy, blending creativity with consistency to grow audiences and strengthen brand identity.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 <!-- WHY CHOOSE US -->
 <section class="wcu-section" id="why-choose-us" style="background-image: linear-gradient(135deg, rgba(8, 13, 13, 0.78), rgba(8, 13, 13, 0.68)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
