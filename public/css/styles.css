@@ -812,7 +812,11 @@ h2.section-title {
     flex-direction: column;
 }
 .team-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(8,13,13,0.12); }
-.team-photo img { width: 100%; height: 320px; object-fit: cover; display: block; }
+.team-photo img { width: 100%; height: 320px; object-fit: cover; object-position: center; display: block; }
+
+@media (max-width: 768px) {
+    .team-photo img { object-position: center top; }
+}
 .team-card-body { padding: 1.1rem 1.25rem 1.6rem; text-align: center; }
 .team-name { font-size: 1.15rem; font-weight: 800; color: var(--text-dark); margin-bottom: .25rem; }
 .team-role { color: var(--teal); font-weight: 700; margin-bottom: .6rem; }
