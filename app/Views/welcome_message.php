@@ -12,7 +12,27 @@
 <style>
   .services-cards-wrap {
     background-image: url('<?= base_url('services_ai_bg.jpg') ?>');
-    
+  }
+
+  /* Blur-like look for services cards background */
+  .services-cards-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    opacity: 0.55;
+    transform: scale(1.08);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .services-cards-wrap > * {
+    position: relative;
+    z-index: 1;
   }
   .hero{
       min-height:100vh;
@@ -274,60 +294,6 @@
   </div>
 </section>
 
-
-<!-- TEAM -->
-<section class="team-section" id="team">
-  <div class="text-center">
-    <div class="eyebrow">Our People</div>
-    <h2 class="section-title">Meet the <span>Team</span></h2>
-    <p class="section-sub">Talented people behind our products and client success.</p>
-  </div>
-
-  <div class="team-grid">
-    <div class="team-card" data-reveal="up">
-      <div class="team-photo">
-        <img src="<?= base_url('teams/team_cto.jpeg') ?>" alt="Ajit Mishra">
-      </div>
-      <div class="team-card-body">
-        <h3 class="team-name">Ajit Mishra</h3>
-        <div class="team-role">CTO</div>
-        <p class="team-note">Drives technology vision and innovation with strategic leadership, ensuring scalable solutions and measurable impact.</p>
-      </div>
-    </div>
-
-    <div class="team-card" data-reveal="up">
-      <div class="team-photo"><img src="<?= base_url('teams/team_md.jpeg') ?>" alt="Amrinder Singh"></div>
-      <div class="team-card-body">
-        <h3 class="team-name">Amrinder Singh</h3>
-        <div class="team-role">MD</div>
-        <p class="team-note">Champions brand expansion and market leadership through innovative strategies that convert opportunities into results.</p>
-      </div>
-    </div>
-
-    <div class="team-card" data-reveal="up">
-      <div class="team-photo">
-        <img src="<?= base_url('teams/team_iot.jpeg') ?>" alt="Ravinder Singh">
-      </div>
-      <div class="team-card-body">
-        <h3 class="team-name">Ravinder Singh</h3>
-        <div class="team-role">IOT Expert</div>
-        <p class="team-note">Drives IoT innovation, transforming data from devices into actionable, measurable outcomes.</p>
-      </div>
-    </div>
-
-    <div class="team-card" data-reveal="up">
-      <div class="team-photo">
-        <img src="<?= base_url('teams/team_development.jpeg') ?>" alt="Developer Teams">
-      </div>
-      <div class="team-card-body">
-        <h3 class="team-name">Development Teams</h3>
-        <div class="team-role">Engineering</div>
-        <p class="team-note">Leads social media strategy, blending creativity with consistency to grow audiences and strengthen brand identity.</p>
-      </div>
-    </div>
-  </div>
-
-</section>
 
 <!-- WHY CHOOSE US -->
 <section class="wcu-section" id="why-choose-us" style="background-image: linear-gradient(135deg, rgba(8, 13, 13, 0.78), rgba(8, 13, 13, 0.68)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
@@ -743,6 +709,61 @@
         <span class="flag-label">France</span>
       </div>
 
+    </div>
+  </div>
+
+</section>
+
+
+<!-- TEAM -->
+<section class="team-section" id="team">
+  <div class="text-center">
+    <div class="eyebrow">Our People</div>
+    <h2 class="section-title">Meet the <span>Team</span></h2>
+    <p class="section-sub">Talented people behind our products and client success.</p>
+  </div>
+
+  <div class="team-grid">
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo">
+        <img src="<?= base_url('teams/team_cto.jpeg') ?>" alt="Ajit Mishra">
+      </div>
+      <div class="team-card-body">
+        <h3 class="team-name">Ajit Mishra</h3>
+        <div class="team-role">CTO</div>
+        <p class="team-note">Drives technology vision and innovation with strategic leadership, ensuring scalable solutions and measurable impact.</p>
+      </div>
+    </div>
+
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo"><img src="<?= base_url('teams/team_md.jpeg') ?>" alt="Amrinder Singh"></div>
+      <div class="team-card-body">
+        <h3 class="team-name">Amrinder Singh</h3>
+        <div class="team-role">MD</div>
+        <p class="team-note">Champions brand expansion and market leadership through innovative strategies that convert opportunities into results.</p>
+      </div>
+    </div>
+
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo">
+        <img src="<?= base_url('teams/team_iot.jpeg') ?>" alt="Ravinder Singh">
+      </div>
+      <div class="team-card-body">
+        <h3 class="team-name">Ravinder Singh</h3>
+        <div class="team-role">IOT Expert</div>
+        <p class="team-note">Drives IoT innovation, transforming data from devices into actionable, measurable outcomes.</p>
+      </div>
+    </div>
+
+    <div class="team-card" data-reveal="up">
+      <div class="team-photo">
+        <img src="<?= base_url('teams/team_development.jpeg') ?>" alt="Developer Teams">
+      </div>
+      <div class="team-card-body">
+        <h3 class="team-name">Development Teams</h3>
+        <div class="team-role">Engineering</div>
+        <p class="team-note">Leads social media strategy, blending creativity with consistency to grow audiences and strengthen brand identity.</p>
+      </div>
     </div>
   </div>
 

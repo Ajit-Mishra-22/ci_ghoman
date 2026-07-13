@@ -2294,6 +2294,14 @@ footer p.foot-desc {
         background-attachment: scroll;
     }
 
+    /* Fix: ensure testimonial background image scales correctly on mobile */
+    .testi-section {
+        background-attachment: scroll !important;
+        background-size: cover;
+        background-position: center top;
+    }
+
+
     .wcu-header h2 {
         font-size: 1.7rem;
     }
