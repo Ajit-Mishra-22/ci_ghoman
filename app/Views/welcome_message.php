@@ -9,10 +9,23 @@
 <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>"/>
 <link rel="stylesheet" href="<?= base_url('css/styles.ribbon.css') ?>"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<style>
+  <style>
   .services-cards-wrap {
     background-image: url('<?= base_url('services_ai_bg.jpg') ?>');
   }
+
+  footer.footer{
+    position: relative;
+    background-image: linear-gradient(135deg, rgb(0 0 0 / 52%), rgb(0 0 0 / 73%)), url('<?= base_url('hero-bg.jpeg') ?>');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* ensures background covers without affecting layout; used if needed */
+  footer.footer .footer-bg{display:none;}
+
+
 
   /* Blur-like look for services cards background */
   .services-cards-wrap::after {
@@ -134,10 +147,10 @@
   <a href="<?= base_url('/') ?>" class="logo-wrap">
     <!-- <div class="logo-icon">GT</div> -->
     <div class="logo-icon1">
-      <img src="<?= base_url('logow.png') ?>" class="imgw" width="60" alt="GhomanITSolutions Logo">
-      <img src="<?= base_url('logob.png') ?>" class="imgb" width="60" alt="GhomanITSolutions Logo">
+      <img src="<?= base_url('logow.png') ?>" class="imgw" width="60" alt="Ghoman IT Solutions Logo">
+      <img src="<?= base_url('logob.png') ?>" class="imgb" width="60" alt="Ghoman IT Solutions Logo">
     </div>
-    <span class="logo-text">Ghoman<strong>IT </strong>Solutions</span>
+    <span class="logo-text">Ghoman <strong>IT</strong> Solutions</span>
   </a>
   <div class="nav-center" aria-label="Primary navigation">
     <a href="#home" class="nav-link">Home</a>
@@ -161,8 +174,8 @@
   <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
   <a href="<?= base_url('/') ?>" class="drawer-logo">
     <!-- <div class="logo-icon">GT</div> -->
-    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60" alt="GhomanIT Logo"></div>
-    <span>Ghoman<strong>IT </strong>Solutions</span>
+    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60" alt="Ghoman IT Logo"></div>
+    <span>Ghoman <strong>IT</strong> Solutions</span>
   </a>
   <ul class="drawer-links">
     <li><a class="drawer-link" href="#home">Home</a></li>
@@ -296,7 +309,7 @@
 
 
 <!-- WHY CHOOSE US -->
-<section class="wcu-section" id="why-choose-us" style="background-image: linear-gradient(135deg, rgba(8, 13, 13, 0.78), rgba(8, 13, 13, 0.68)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+<section class="wcu-section" id="why-choose-us" style="background-image: linear-gradient(135deg, rgb(118 148 148 / 78%), rgb(64 89 89 / 68%)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
   <div class="wcu-header" data-reveal="up">
     <h2>Why Choose <span style="color:var(--teal)">Us</span></h2>
     <p>We combine deep expertise with cutting-edge technology to deliver solutions that truly make a difference.</p>
@@ -473,7 +486,7 @@
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testi-section" id="testimonials" style="background-image: linear-gradient(135deg, rgba(8, 13, 13, 0.78), rgba(8, 13, 13, 0.68)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+<section class="testi-section" id="testimonials" style="background-image: linear-gradient(135deg, rgb(118 148 148 / 78%), rgb(64 89 89 / 68%)), url('<?= base_url('hand_bg.png') ?>'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
   <div class="text-center">
     <div class="eyebrow" data-reveal="fade">Client Stories</div>
     <h2 class="section-title">What Our <span>Clients Say</span></h2>
@@ -780,18 +793,20 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer class="footer" >
+  <div class="footer-bg" aria-hidden="true"></div>
   <div class="footer-grid">
+
     <div>
       <a href="<?= base_url('/') ?>" class="foot-logo">
         <!-- <div class="logo-icon">GT</div> -->
-         <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60"  alt="GhomanITSolutions Logo"></div>
+         <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60"  alt="Ghoman IT Solutions Logo"></div>
         <span class="foot-logo-text">Ghoman<strong>IT </strong>Solutions</span>
       </a>
       <p class="foot-desc">Empowering businesses with intelligent technology. From AI to cloud infrastructure, we build systems that move industries forward.</p>
     </div>
     <div class="foot-col">
-      <h5>Services</h5>
+      <h3>Services</h3>
       <ul>
         <li><a href="<?= base_url('/') ?>">AI & ML</a></li>
         <li><a href="<?= base_url('/') ?>">Cloud Infra</a></li>
@@ -801,7 +816,7 @@
       </ul>
     </div>
     <div class="foot-col">
-      <h5>Company</h5>
+      <h3>Company</h3>
       <ul>
         <li><a href="<?= base_url('/') ?>">About Us</a></li>
         <li><a href="<?= base_url('/') ?>">Case Studies</a></li>
@@ -811,7 +826,7 @@
       </ul>
     </div>
     <div class="foot-col">
-      <h5>Contact</h5>
+      <h3>Contact</h3>
       <ul>
         <li><a href="<?= base_url('/') ?>">hello@ghoman.ca</a></li>
         <li><a href="<?= base_url('/') ?>">+1 (587) 736-2288</a></li>
@@ -821,7 +836,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 GhomanIT. All rights reserved.</span>
+    <span>© 2026 Ghoman IT. All rights reserved.</span>
     <div class="social-row">
       <a href="<?= base_url('/') ?>" class="soc">𝕏</a>
       <a href="<?= base_url('/') ?>" class="soc">in</a>
