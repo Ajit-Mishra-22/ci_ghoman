@@ -445,7 +445,7 @@ h2.section-title {
 
 .services-heading p {
     font-size: .95rem;
-    color: var(--text-muted);
+    color: var(--text-dark);
     max-width: 620px;
     margin: 0 auto;
     line-height: 1.75;

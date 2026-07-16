@@ -147,8 +147,8 @@
   <a href="<?= base_url('/') ?>" class="logo-wrap">
     <!-- <div class="logo-icon">GT</div> -->
     <div class="logo-icon1">
-      <img src="<?= base_url('logow.png') ?>" class="imgw" width="60" alt="Ghoman IT Solutions Logo">
-      <img src="<?= base_url('logob.png') ?>" class="imgb" width="60" alt="Ghoman IT Solutions Logo">
+      <img src="<?= base_url('logow.png') ?>" class="imgw" width="70" alt="Ghoman IT Solutions Logo">
+      <img src="<?= base_url('logob.png') ?>" class="imgb" width="70" alt="Ghoman IT Solutions Logo">
     </div>
     <span class="logo-text">Ghoman <strong>IT</strong> Solutions</span>
   </a>
@@ -174,7 +174,7 @@
   <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
   <a href="<?= base_url('/') ?>" class="drawer-logo">
     <!-- <div class="logo-icon">GT</div> -->
-    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60" alt="Ghoman IT Logo"></div>
+    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="70" alt="Ghoman IT Logo"></div>
     <span>Ghoman <strong>IT</strong> Solutions</span>
   </a>
   <ul class="drawer-links">
@@ -800,7 +800,7 @@
     <div>
       <a href="<?= base_url('/') ?>" class="foot-logo">
         <!-- <div class="logo-icon">GT</div> -->
-         <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="60"  alt="Ghoman IT Solutions Logo"></div>
+         <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="70"  alt="Ghoman IT Solutions Logo"></div>
         <span class="foot-logo-text">Ghoman<strong>IT </strong>Solutions</span>
       </a>
       <p class="foot-desc">Empowering businesses with intelligent technology. From AI to cloud infrastructure, we build systems that move industries forward.</p>
