@@ -698,9 +698,7 @@
 
   <div class="team-grid">
     <div class="team-card" data-reveal="up">
-      <div class="team-photo">
-        <img src="<?= base_url('teams/team_cto.jpeg') ?>" alt="Ajit Mishra">
-      </div>
+      
       <div class="team-card-body">
         <h3 class="team-name">Ajit Mishra</h3>
         <div class="team-role">CTO</div>
@@ -709,7 +707,6 @@
     </div>
 
     <div class="team-card" data-reveal="up">
-      <div class="team-photo"><img src="<?= base_url('teams/team_md.jpeg') ?>" alt="Amrinder Singh"></div>
       <div class="team-card-body">
         <h3 class="team-name">Amrinder Singh</h3>
         <div class="team-role">MD</div>
@@ -718,9 +715,6 @@
     </div>
 
     <div class="team-card" data-reveal="up">
-      <div class="team-photo">
-        <img src="<?= base_url('teams/team_iot.jpeg') ?>" alt="Ravinder Singh">
-      </div>
       <div class="team-card-body">
         <h3 class="team-name">Ravinder Singh</h3>
         <div class="team-role">IOT Expert</div>
@@ -729,9 +723,6 @@
     </div>
 
     <div class="team-card" data-reveal="up">
-      <div class="team-photo">
-        <img src="<?= base_url('teams/team_development.jpeg') ?>" alt="Developer Teams">
-      </div>
       <div class="team-card-body">
         <h3 class="team-name">Development Teams</h3>
         <div class="team-role">Engineering</div>

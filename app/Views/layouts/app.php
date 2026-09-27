@@ -145,7 +145,7 @@
                     <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="offices-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="offices-social" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    
                 </div>
             </div>
         </div>
