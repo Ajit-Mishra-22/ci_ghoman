@@ -1,2 +1,11 @@
 User-agent: *
-Disallow: 
+Allow: /
+
+# Block framework / non-public paths
+Disallow: /index.php/
+Disallow: /writable/
+Disallow: /contact/send
+
+# Hosted on the public/ folder — update the host below when deploying.
+Sitemap: https://ghoman.ca/sitemap.xml
+

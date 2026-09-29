@@ -134,7 +134,7 @@
   <div class="about-grid">
     <div class="about-visual" data-reveal="right">
       <div class="about-img-card">
-        <div class="about-num">12+</div>
+        <div class="about-num">1+</div>
         <div class="about-num-label">Years of Innovation</div>
         <div class="about-list">
           <div class="about-list-item">AI-powered product development</div>
@@ -145,15 +145,15 @@
         </div>
         <div style="margin-top:2rem;display:flex;gap:1.5rem">
           <div>
-            <div style="font-size:1.6rem;font-weight:900;color:#00e5cc">500+</div>
+            <div style="font-size:1.6rem;font-weight:900;color:#00e5cc">50+</div>
             <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px">Projects</div>
           </div>
           <div>
-            <div style="font-size:1.6rem;font-weight:900;color:#00e5cc">40+</div>
+            <div style="font-size:1.6rem;font-weight:900;color:#00e5cc">Many</div>
             <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px">Countries</div>
           </div>
           <div>
-            <div style="font-size:1.6rem;font-weight:900;color:#00e5cc">98%</div>
+            <div style="font-size:1.6rem;font-weight:900;color:#00e5cc">99%</div>
             <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px">Satisfaction</div>
           </div>
         </div>
@@ -161,7 +161,7 @@
     </div>
     <div class="about-content" data-reveal="left">
       <h2 class="section-title">We Build Technology That <span>Scales With You</span></h2>
-      <p class="section-sub">From early-stage startups to Fortune 500 enterprises, our solutions are engineered for clarity, performance, and growth — without the technical debt.</p>
+      <p class="section-sub">From early-stage startups to Fortune 50+ enterprises, our solutions are engineered for clarity, performance, and growth — without the technical debt.</p>
       <div class="feature-pills">
         <div class="pill">
           <div class="pill-dot"></div>AI-Native
@@ -209,7 +209,7 @@
               </svg>
             </div>
           </div>
-          <div class="wcu-desc">Over 12 years of delivering enterprise-grade IT solutions across 40+ countries, with a proven track record of success.</div>
+          <div class="wcu-desc">Over 1+ years of delivering enterprise-grade IT solutions across many countries, with a proven track record of success.</div>
         </div>
         <div><!-- icon is in center --></div>
       </div>
@@ -373,27 +373,6 @@
   </div>
 </section>
 
-<!-- STATS BAR -->
-<div class="stats-section">
-  <div class="stats-grid">
-    <div class="stat-item" data-reveal="up" data-delay="100">
-      <div class="num">500+</div>
-      <div class="lbl">Projects Delivered</div>
-    </div>
-    <div class="stat-item" data-reveal="up" data-delay="200">
-      <div class="num">120+</div>
-      <div class="lbl">Expert Engineers</div>
-    </div>
-    <div class="stat-item" data-reveal="up" data-delay="300">
-      <div class="num">40+</div>
-      <div class="lbl">Countries Served</div>
-    </div>
-    <div class="stat-item" data-reveal="up" data-delay="400">
-      <div class="num">98%</div>
-      <div class="lbl">Client Satisfaction</div>
-    </div>
-  </div>
-</div>
 
 <!-- WHY US -->
 <section class="whyus-section">
@@ -450,8 +429,8 @@
       <div class="testi-author">
         <div class="av">AR</div>
         <div>
-          <div class="av-name">Alex Rivera</div>
-          <div class="av-role">CTO, DataFlow Inc.</div>
+          <div class="av-name">Ravinder Singh</div>
+          
         </div>
       </div>
     </div>
@@ -461,8 +440,7 @@
       <div class="testi-author">
         <div class="av">SP</div>
         <div>
-          <div class="av-name">Sara Patel</div>
-          <div class="av-role">CISO, FinBridge Group</div>
+          <div class="av-name">Ghoman Singh</div>
         </div>
       </div>
     </div>
@@ -472,8 +450,7 @@
       <div class="testi-author">
         <div class="av">MK</div>
         <div>
-          <div class="av-name">Marcus Kim</div>
-          <div class="av-role">VP Engineering, RetailSphere</div>
+          <div class="av-name">Ajit Mishra</div>
         </div>
       </div>
     </div>
@@ -688,50 +665,6 @@
 </section>
 
 
-<!-- TEAM -->
-<section class="team-section" id="team">
-  <div class="text-center">
-    <div class="eyebrow">Our People</div>
-    <h2 class="section-title">Meet the <span>Team</span></h2>
-    <p class="section-sub">Talented people behind our products and client success.</p>
-  </div>
-
-  <div class="team-grid">
-    <div class="team-card" data-reveal="up">
-      
-      <div class="team-card-body">
-        <h3 class="team-name">Ajit Mishra</h3>
-        <div class="team-role">CTO</div>
-        <p class="team-note">Drives technology vision and innovation with strategic leadership, ensuring scalable solutions and measurable impact.</p>
-      </div>
-    </div>
-
-    <div class="team-card" data-reveal="up">
-      <div class="team-card-body">
-        <h3 class="team-name">Amrinder Singh</h3>
-        <div class="team-role">MD</div>
-        <p class="team-note">Champions brand expansion and market leadership through innovative strategies that convert opportunities into results.</p>
-      </div>
-    </div>
-
-    <div class="team-card" data-reveal="up">
-      <div class="team-card-body">
-        <h3 class="team-name">Ravinder Singh</h3>
-        <div class="team-role">IOT Expert</div>
-        <p class="team-note">Drives IoT innovation, transforming data from devices into actionable, measurable outcomes.</p>
-      </div>
-    </div>
-
-    <div class="team-card" data-reveal="up">
-      <div class="team-card-body">
-        <h3 class="team-name">Development Teams</h3>
-        <div class="team-role">Engineering</div>
-        <p class="team-note">Leads social media strategy, blending creativity with consistency to grow audiences and strengthen brand identity.</p>
-      </div>
-    </div>
-  </div>
-
-</section>
 
 <!-- CTA BAND -->
 <section class="cta-band" id="contact">
