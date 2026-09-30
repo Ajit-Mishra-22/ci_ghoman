@@ -37,13 +37,8 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: inherit;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            filter: blur(8px);
-            opacity: 0.55;
-            transform: scale(1.08);
+            background: rgba(255,255,255,0.2); /* or any overlay */
+            backdrop-filter: blur(8px);
             z-index: 0;
             pointer-events: none;
         }
@@ -158,10 +153,10 @@
         <a href="<?= base_url('/') ?>" class="logo-wrap">
             <!-- <div class="logo-icon">GT</div> -->
             <div class="logo-icon1">
-                <img src="<?= base_url('logow.png') ?>" class="imgw" width="70" alt="Ghoman IT Solutions Logo">
-                <img src="<?= base_url('logob.png') ?>" class="imgb" width="70" alt="Ghoman IT Solutions Logo">
+                <img src="<?= base_url('logow1.png') ?>" class="imgw" width="160" alt="Ghoman IT Solutions Logo">
+                <img src="<?= base_url('logob3.png') ?>" class="imgb" width="160" alt="Ghoman IT Solutions Logo">
             </div>
-            <span class="logo-text">Ghoman <strong>IT</strong> Solutions</span>
+            
         </a>
         <div class="nav-center" aria-label="Primary navigation">
             <a href="#home" class="nav-link">Home</a>
@@ -191,8 +186,8 @@
             <div>
                 <a href="<?= base_url('/') ?>" class="foot-logo">
                     <!-- <div class="logo-icon">GT</div> -->
-                    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="70" alt="Ghoman IT Solutions Logo"></div>
-                    <span class="foot-logo-text">Ghoman<strong>IT </strong>Solutions</span>
+                    <div class="logo-icon1"><img src="<?= base_url('logow1.png') ?>" width="160" alt="Ghoman IT Solutions Logo"></div>
+                    
                 </a>
                 <p class="foot-desc">Empowering businesses with intelligent technology. From AI to cloud infrastructure, we build systems that move industries forward.</p>
             </div>
