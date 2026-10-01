@@ -425,7 +425,7 @@
   <div class="testi-grid">
     <div class="testi-card" data-reveal="zoom" data-delay="100">
       <div class="stars">★★★★★</div>
-      <p class="testi-text">"Ghoman - IT rebuilt our data pipeline from scratch. Processing time dropped from 4 hours to under 3 minutes. The ROI was visible within the first quarter."</p>
+      <p class="testi-text">"This IT company excels at building scalable, user-friendly web applications. Their team ensures clean code, modern design, and seamless performance across devices."</p>
       <div class="testi-author">
         <div class="av">AR</div>
         <div>
@@ -436,19 +436,19 @@
     </div>
     <div class="testi-card" data-reveal="zoom" data-delay="250">
       <div class="stars">★★★★★</div>
-      <p class="testi-text">"Their cybersecurity team identified 11 critical vulnerabilities that others had missed. Professional, thorough, and completely trustworthy."</p>
+      <p class="testi-text">"The company not only delivers excellent IT solutions but also ensures strong SEO practices. Their websites are optimized for speed, mobile responsiveness, and search visibility, helping businesses rank higher and attract more customers."</p>
       <div class="testi-author">
-        <div class="av">SP</div>
+        <div class="av">OP</div>
         <div>
-          <div class="av-name">Ghoman Singh</div>
+          <div class="av-name">Olivia Parker</div>
         </div>
       </div>
     </div>
     <div class="testi-card" data-reveal="zoom" data-delay="400">
       <div class="stars">★★★★★</div>
-      <p class="testi-text">"We moved from a monolith to microservices in 6 months. Ghoman-IT's agile approach kept us informed at every step without slowing us down."</p>
+      <p class="testi-text">"This IT company delivers reliable, innovative solutions with excellent support. Their professional team ensures smooth communication and high-quality results."</p>
       <div class="testi-author">
-        <div class="av">MK</div>
+        <div class="av">AM</div>
         <div>
           <div class="av-name">Ajit Mishra</div>
         </div>

@@ -117,7 +117,7 @@
     <?= $this->renderSection('css') ?>
 </head>
 
-<body>
+<body<?= !empty($body_class) ? ' class="' . esc($body_class) . '"' : '' ?>>
 
 
     <!-- TOP RIBBON / OFFICES BAR -->
@@ -150,7 +150,7 @@
 
     <!-- NAV -->
     <nav id="main-nav">
-        <a href="<?= base_url('/') ?>" class="logo-wrap">
+        <a href="<?= route_to('home') ?>" class="logo-wrap">
             <!-- <div class="logo-icon">GT</div> -->
             <div class="logo-icon1">
                 <img src="<?= base_url('logow1.png') ?>" class="imgw" width="160" alt="Ghoman IT Solutions Logo">
@@ -159,14 +159,14 @@
             
         </a>
         <div class="nav-center" aria-label="Primary navigation">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
-            <a href="#testimonials" class="nav-link">Testimonials</a>
-            <a href="#technologies" class="nav-link">Technologies</a>
-            <a href="#clients" class="nav-link">Clients</a>
-            <a href="<?= base_url('/contact') ?>" class="nav-link">Contact</a>
+            <a href="<?= route_to('home') ?>" class="nav-link">Home</a>
+            <a href="<?= route_to('home') ?>#services" class="nav-link">Services</a>
+            <a href="<?= route_to('home') ?>#about" class="nav-link">About</a>
+            <a href="<?= route_to('home') ?>#why-choose-us" class="nav-link">Why Choose Us</a>
+            <a href="<?= route_to('home') ?>#testimonials" class="nav-link">Testimonials</a>
+            <a href="<?= route_to('home') ?>#technologies" class="nav-link">Technologies</a>
+            <a href="<?= route_to('home') ?>#clients" class="nav-link">Clients</a>
+            <a href="<?= route_to('contact') ?>" class="nav-link">Contact</a>
 
         </div>
 
@@ -184,7 +184,7 @@
         <div class="footer-grid">
 
             <div>
-                <a href="<?= base_url('/') ?>" class="foot-logo">
+                <a href="<?= route_to('home') ?>" class="foot-logo">
                     <!-- <div class="logo-icon">GT</div> -->
                     <div class="logo-icon1"><img src="<?= base_url('logow1.png') ?>" width="160" alt="Ghoman IT Solutions Logo"></div>
                     
@@ -194,21 +194,21 @@
             <div class="foot-col">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="<?= base_url('/') ?>">AI & ML</a></li>
-                    <li><a href="<?= base_url('/') ?>">Cloud Infra</a></li>
-                    <li><a href="<?= base_url('/') ?>">Cybersecurity</a></li>
-                    <li><a href="<?= base_url('/') ?>">Analytics</a></li>
-                    <li><a href="<?= base_url('/') ?>">Web Hosting</a></li>
+                    <li><a href="<?= route_to('home') ?>#ai-ml">AI & ML</a></li>
+                    <li><a href="<?= route_to('home') ?>#cloud-infra">Cloud Infra</a></li>
+                    <li><a href="<?= route_to('home') ?>#cybersecurity">Cybersecurity</a></li>
+                    <li><a href="<?= route_to('home') ?>#analytics">Analytics</a></li>
+                    <li><a href="<?= route_to('home') ?>#web-hosting">Web Hosting</a></li>
                 </ul>
             </div>
             <div class="foot-col">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="<?= base_url('/') ?>">About Us</a></li>
-                    <li><a href="<?= base_url('/') ?>">Case Studies</a></li>
-                    <li><a href="<?= base_url('/') ?>">Careers</a></li>
-                    <li><a href="<?= base_url('/') ?>">Blog</a></li>
-                    <li><a href="<?= base_url('/') ?>">Partners</a></li>
+                    <li><a href="<?= route_to('home') ?>#about">About Us</a></li>
+                    <li><a href="<?= route_to('home') ?>#case-studies">Case Studies</a></li>
+                    <li><a href="<?= route_to('home') ?>#careers">Careers</a></li>
+                    <li><a href="<?= route_to('home') ?>#blog">Blog</a></li>
+                    <li><a href="<?= route_to('home') ?>#partners">Partners</a></li>
                 </ul>
             </div>
             <div class="foot-col">
@@ -222,12 +222,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© 2026 Ghoman IT. All rights reserved.</span>
+            <span>© <?= date('Y') ?> Ghoman IT. All rights reserved.</span>
             <div class="social-row">
-                <a href="<?= base_url('/') ?>" class="soc">𝕏</a>
-                <a href="<?= base_url('/') ?>" class="soc">in</a>
-                <a href="<?= base_url('/') ?>" class="soc">gh</a>
-                <a href="<?= base_url('/') ?>" class="soc">yt</a>
+                <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/ghoman-it-solutions" class="offices-social" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                
+                <!-- <a href="https://www.youtube.com/@ghomanit" class="offices-social" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
             </div>
             <div style="display:flex;gap:1.5rem">
                 <a href="<?= base_url('/') ?>" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.8rem">Privacy</a>

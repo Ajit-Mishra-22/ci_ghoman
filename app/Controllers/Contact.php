@@ -9,7 +9,10 @@ class Contact extends BaseController
     public function index(): string
     {
         helper('form');
-        return view('contact', ['seo' => \Config\Seo::for('contact')]);
+        return view('contact', [
+            'seo' => \Config\Seo::for('contact'),
+            'body_class' => 'page-contact',
+        ]);
     }
 
     public function send()

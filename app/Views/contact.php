@@ -3,6 +3,23 @@
 <?= $this->section('css') ?>
 <style>
   /* ===== Contact Page Specific Styles ===== */
+  body.page-contact nav {
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  body.page-contact nav .nav-link {
+    color: var(--text-dark);
+  }
+
+  body.page-contact nav .imgw {
+    display: none;
+  }
+
+  body.page-contact nav .imgb {
+    display: block;
+  }
+
   .contact-page {
     padding: 140px 5% 80px;
     background: var(--light-bg);
@@ -47,16 +64,20 @@
   .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .contact-info-card {
     background: var(--white);
     border-radius: 16px;
-    padding: 1.8rem 2rem;
+    padding: 1.2rem 1.4rem;
     border: 1px solid var(--border-light);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .contact-info-card:hover {
@@ -65,37 +86,53 @@
   }
 
   .contact-info-card .info-icon {
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background: rgba(0, 191, 165, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
     color: var(--teal);
-    font-size: 1.2rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .contact-info-card .info-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.4rem;
   }
 
   .contact-info-card h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 0.4rem;
+    margin: 0;
   }
 
   .contact-info-card p,
   .contact-info-card a {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     color: var(--text-muted);
-    line-height: 1.6;
+    line-height: 1.5;
     text-decoration: none;
     display: block;
-    transition: color 0.2s;
+    transition: color 0.2s, text-decoration-color 0.2s;
+  }
+
+  .contact-info-card a {
+    color: var(--teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.18rem;
+    text-decoration-thickness: 1.5px;
   }
 
   .contact-info-card a:hover {
-    color: var(--teal);
+    color: var(--teal-dark);
+    text-decoration: underline;
   }
 
   /* Form Side */
@@ -314,22 +351,36 @@
     <!-- Contact Info -->
     <div class="contact-info">
       <div class="contact-info-card">
-        <div class="info-icon"><i class="fas fa-envelope"></i></div>
-        <h3>Email Us</h3>
+        <div class="info-header">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email Us</h3>
+        </div>
         <a href="mailto:hello@ghoman.ca">hello@ghoman.ca</a>
       </div>
 
       <div class="contact-info-card">
-        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
-        <h3>Call Us</h3>
+        <div class="info-header">
+          <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+          <h3>Call Us</h3>
+        </div>
         <a href="tel:+15877362288">CAN: +1 (587) 736-2288</a>
         <a href="tel:+918360422303">IND: +91 83604 22303</a>
       </div>
 
       <div class="contact-info-card">
-        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <h3>Visit Us</h3>
+        <div class="info-header">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Visit Us</h3>
+        </div>
         <p>2836 36 Ave NW, Edmonton, AB T6T 0H7, Canada</p>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="info-header">
+          <div class="info-icon"><i class="fas fa-star"></i></div>
+          <h3>Leave a Review</h3>
+        </div>
+        <a href="https://g.page/r/CT46nf2eTpLuEBI/review" target="_blank" rel="noopener noreferrer">Share your experience on Google</a>
       </div>
 
       <div class="contact-info-card" style="display:none;">
