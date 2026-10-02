@@ -2,26 +2,6 @@
 
 <?= $this->section('content') ?>
 
-<div class="drawer-overlay" id="drawerOverlay"></div>
-<aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
-  <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
-  <a href="<?= base_url('/') ?>" class="drawer-logo">
-    <!-- <div class="logo-icon">GT</div> -->
-    <div class="logo-icon1"><img src="<?= base_url('logow.png') ?>" width="70" alt="Ghoman IT Logo"></div>
-    <span>Ghoman <strong>IT</strong> Solutions</span>
-  </a>
-  <ul class="drawer-links">
-    <li><a class="drawer-link" href="#home">Home</a></li>
-    <li><a class="drawer-link" href="#services">Services</a></li>
-    <li><a class="drawer-link" href="#about">About</a></li>
-    <li><a class="drawer-link" href="#why-choose-us">Why Choose Us</a></li>
-    <li><a class="drawer-link" href="#testimonials">Testimonials</a></li>
-    <li><a class="drawer-link" href="#technologies">Technologies</a></li>
-    <li><a class="drawer-link" href="#clients">Clients</a></li>
-    <li><a class="drawer-link" href="<?= base_url('/contact') ?>">Contact</a></li>
-  </ul>
-</aside>
-
 <!-- HERO -->
 <section class="hero" id="home">
   <canvas id="network-canvas"></canvas>

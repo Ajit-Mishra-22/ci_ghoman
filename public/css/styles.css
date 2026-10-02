@@ -1200,11 +1200,15 @@ footer p.foot-desc {
     right: -100%;
     width: min(320px, 85vw);
     height: 100vh;
+    height: 100dvh;
     background: #080f0f;
     z-index: 300;
     padding: 2rem 2rem 3rem;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     transition: right .35s cubic-bezier(.4, 0, .2, 1);
     border-left: 1px solid rgba(0, 191, 165, .15);
 }

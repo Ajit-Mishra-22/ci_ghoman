@@ -175,6 +175,24 @@
         </div>
     </nav>
 
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+        <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+        <a href="<?= route_to('home') ?>" class="drawer-logo">
+            <div class="logo-icon1"><img src="<?= base_url('logow1.png') ?>" width="160" alt="Ghoman IT Logo"></div>
+        </a>
+        <ul class="drawer-links">
+            <li><a class="drawer-link" href="<?= route_to('home') ?>#home">Home</a></li>
+            <li><a class="drawer-link" href="<?= route_to('home') ?>#services">Services</a></li>
+            <li><a class="drawer-link" href="<?= route_to('home') ?>#about">About</a></li>
+            <li><a class="drawer-link" href="<?= route_to('home') ?>#why-choose-us">Why Choose Us</a></li>
+            <li><a class="drawer-link" href="<?= route_to('home') ?>#testimonials">Testimonials</a></li>
+            <li><a class="drawer-link" href="<?= route_to('home') ?>#technologies">Technologies</a></li>
+            <li><a class="drawer-link" href="<?= route_to('home') ?>#clients">Clients</a></li>
+            <li><a class="drawer-link" href="<?= route_to('contact') ?>">Contact</a></li>
+        </ul>
+    </aside>
+
     <?= $this->renderSection('content') ?>
 
 

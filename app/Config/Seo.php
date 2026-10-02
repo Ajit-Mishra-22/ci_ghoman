@@ -91,7 +91,7 @@ class Seo extends BaseConfig
         'type'    => 'ProfessionalService',
         'email'   => 'hello@ghoman.ca',
         'phone'   => '+15877362288',
-        'logo'    => 'logow.png',
+        'logo'    => 'logow1.png',
         'priceRange' => '$$',
         'address' => [
             'streetAddress'   => '2836 36 Ave NW',
