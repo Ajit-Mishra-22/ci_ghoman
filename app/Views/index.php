@@ -359,7 +359,7 @@
   <div class="text-center">
     <div class="eyebrow" data-reveal="fade">Our Approach</div>
     <h2 class="section-title">How We <span>Make It Happen</span></h2>
-    <p class="section-sub">A proven four-step methodology that takes you from idea to impact — fast.</p>
+    <p class="section-sub">A proven six-step methodology that takes you from idea to impact — fast.</p>
   </div>
   <div class="why-grid">
     <div class="why-card" data-reveal="up" data-delay="100">
@@ -546,8 +546,8 @@
   </svg>
 
   <div data-reveal="up">
-    <h2>We Works in Every Part of the World</h2>
-    <p class="sub">Trusted by teams in 25+ countries worldwide</p>
+    <h2>We Work in Every Part of the World</h2>
+    <p class="sub">Trusted by teams in many countries worldwide</p>
   </div>
 
   <div class="world-map-wrap">

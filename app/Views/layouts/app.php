@@ -113,6 +113,14 @@
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             margin: 0px auto 20px;
         }
+        .offices-phone{
+            color: rgba(255, 255, 255, .85);
+            text-decoration: none;
+        }
+
+        .offices-phone:hover{
+            color: #00e5cc;
+        }
     </style>
     <?= $this->renderSection('css') ?>
 </head>
@@ -126,11 +134,11 @@
             <div class="offices-bar-inner">
                 <div class="offices-bar-left">
                     <span class="offices-bar-item">
-                        <span class="offices-bar-label">CAN</span> : +1 (587) 736-2288
+                        <span class="offices-bar-label">CAN</span> : <a href="tel:+15877362288" class="offices-phone"> +1 (587) 736-2288 </a>
                     </span>
                     <span class="offices-bar-sep">|</span>
                     <span class="offices-bar-item">
-                        <span class="offices-bar-label">IND</span> : +91 83604 22303
+                        <span class="offices-bar-label">IND</span> : <a href="tel:+918360422303" class="offices-phone">+91 83604 22303</a>
                     </span>
                     <span class="offices-bar-sep">|</span>
                     <span class="offices-bar-item">
@@ -139,9 +147,9 @@
                     </span>
                 </div>
                 <div class="offices-bar-right">
-                    <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://ca.linkedin.com/in/ghoman-it-solutions-305502440" class="offices-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" target="_blank" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ghomanitsolutions?stkn=ZndjZThidDY5d2tq&utm_source=qr" target="_blank" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://ca.linkedin.com/in/ghoman-it-solutions-305502440" target="_blank" rel="noopener noreferrer" class="offices-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     
                 </div>
             </div>
@@ -234,8 +242,8 @@
             <div class="foot-col">
                 <h3>Contact</h3>
                 <ul>
-                    <li><a href="<?= base_url('/') ?>">hello@ghoman.ca</a></li>
-                    <li><a href="<?= base_url('/') ?>">+1 (587) 736-2288</a></li>
+                    <li><a href="mailto:hello@ghoman.ca">hello@ghoman.ca</a></li>
+                    <li><a href="tel:+15877362288">+1 (587) 736-2288</a></li>
                     <li><a href="<?= base_url('/') ?>">2836 36 Ave NW, Edmonton, AB T6T 0H7</a></li>
                     <li><a href="https://attendopay.com/">Support Portal - Attendopay</a></li>
                 </ul>
@@ -244,9 +252,9 @@
         <div class="footer-bottom">
             <span>© <?= date('Y') ?> Ghoman IT. All rights reserved.</span>
             <div class="social-row">
-                <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://ca.linkedin.com/in/ghoman-it-solutions-305502440" class="offices-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" target="_blank" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ghomanitsolutions?stkn=ZndjZThidDY5d2tq&utm_source=qr" target="_blank" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://ca.linkedin.com/in/ghoman-it-solutions-305502440" target="_blank" rel="noopener noreferrer" class="offices-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 
                 <!-- <a href="https://www.youtube.com/@ghomanit" class="offices-social" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
             </div>
