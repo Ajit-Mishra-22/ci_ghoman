@@ -141,7 +141,7 @@
                 <div class="offices-bar-right">
                     <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="offices-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://ca.linkedin.com/in/ghoman-it-solutions-305502440" class="offices-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     
                 </div>
             </div>
@@ -160,8 +160,8 @@
         </a>
         <div class="nav-center" aria-label="Primary navigation">
             <a href="<?= route_to('home') ?>" class="nav-link">Home</a>
-            <a href="<?= route_to('home') ?>#services" class="nav-link">Services</a>
-            <a href="<?= route_to('home') ?>#about" class="nav-link">About</a>
+            <a href="<?= route_to('services') ?>" class="nav-link">Services</a>
+            <a href="<?= route_to('about') ?>" class="nav-link">About</a>
             <a href="<?= route_to('home') ?>#why-choose-us" class="nav-link">Why Choose Us</a>
             <a href="<?= route_to('home') ?>#testimonials" class="nav-link">Testimonials</a>
             <a href="<?= route_to('home') ?>#technologies" class="nav-link">Technologies</a>
@@ -183,8 +183,8 @@
         </a>
         <ul class="drawer-links">
             <li><a class="drawer-link" href="<?= route_to('home') ?>#home">Home</a></li>
-            <li><a class="drawer-link" href="<?= route_to('home') ?>#services">Services</a></li>
-            <li><a class="drawer-link" href="<?= route_to('home') ?>#about">About</a></li>
+            <li><a class="drawer-link" href="<?= route_to('services') ?>">Services</a></li>
+            <li><a class="drawer-link" href="<?= route_to('about') ?>">About</a></li>
             <li><a class="drawer-link" href="<?= route_to('home') ?>#why-choose-us">Why Choose Us</a></li>
             <li><a class="drawer-link" href="<?= route_to('home') ?>#testimonials">Testimonials</a></li>
             <li><a class="drawer-link" href="<?= route_to('home') ?>#technologies">Technologies</a></li>
@@ -212,21 +212,23 @@
             <div class="foot-col">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="<?= route_to('home') ?>#ai-ml">AI & ML</a></li>
-                    <li><a href="<?= route_to('home') ?>#cloud-infra">Cloud Infra</a></li>
-                    <li><a href="<?= route_to('home') ?>#cybersecurity">Cybersecurity</a></li>
-                    <li><a href="<?= route_to('home') ?>#analytics">Analytics</a></li>
-                    <li><a href="<?= route_to('home') ?>#web-hosting">Web Hosting</a></li>
+                    <li><a href="<?= route_to('services') ?>#ai-ml">AI &amp; ML</a></li>
+                    <li><a href="<?= route_to('services') ?>#cloud-infra">Cloud Infra</a></li>
+                    <li><a href="<?= route_to('services') ?>#cybersecurity">Cybersecurity</a></li>
+                    <li><a href="<?= route_to('services') ?>#analytics">Analytics</a></li>
+                    <li><a href="<?= route_to('services') ?>#web-hosting">Web Hosting</a></li>
+                    
                 </ul>
             </div>
             <div class="foot-col">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="<?= route_to('home') ?>#about">About Us</a></li>
-                    <li><a href="<?= route_to('home') ?>#case-studies">Case Studies</a></li>
-                    <li><a href="<?= route_to('home') ?>#careers">Careers</a></li>
-                    <li><a href="<?= route_to('home') ?>#blog">Blog</a></li>
-                    <li><a href="<?= route_to('home') ?>#partners">Partners</a></li>
+                    <li><a href="<?= route_to('about') ?>">About Us</a></li>                    
+                    <li><a href="<?= route_to('careers') ?>">Careers</a></li>
+                    <li><a href="<?= route_to('services') ?>#software-development">Software Development</a></li>
+                    <li><a href="<?= route_to('services') ?>#app-development">App Development</a></li>
+                    <li><a href="<?= route_to('services') ?>#seo-digital-marketing">SEO &amp; Digital Marketing</a></li>
+                    
                 </ul>
             </div>
             <div class="foot-col">
@@ -244,13 +246,13 @@
             <div class="social-row">
                 <a href="https://www.facebook.com/share/19AgdebvQK/?mibextid=wwXIfr" class="offices-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/ghoman.ca?igsh=ZndjZThidDY5d2tq&utm_source=qr" class="offices-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/ghoman-it-solutions" class="offices-social" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://ca.linkedin.com/in/ghoman-it-solutions-305502440" class="offices-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 
                 <!-- <a href="https://www.youtube.com/@ghomanit" class="offices-social" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
             </div>
             <div style="display:flex;gap:1.5rem">
-                <a href="<?= base_url('/') ?>" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.8rem">Privacy</a>
-                <a href="<?= base_url('/') ?>" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.8rem">Terms</a>
+                <a href="<?= route_to('privacy') ?>" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.8rem">Privacy Policy</a>
+                <a href="<?= route_to('terms') ?>" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.8rem">Terms & Conditions</a>
             </div>
         </div>
     </footer>

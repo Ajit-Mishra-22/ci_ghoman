@@ -158,6 +158,26 @@
     line-height: 1.6;
   }
 
+  .contact-map {
+    max-width: 1100px;
+    margin: 4rem auto 0;
+  }
+
+  .contact-map h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 1rem;
+  }
+
+  .contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 16px;
+  }
+
   .form-group {
     margin-bottom: 1.4rem;
   }
@@ -326,6 +346,14 @@
       padding: 1.5rem;
     }
 
+    .contact-map {
+      margin-top: 3rem;
+    }
+
+    .contact-map iframe {
+      height: 350px;
+    }
+
     .contact-info-card {
       padding: 1.4rem 1.5rem;
     }
@@ -482,6 +510,16 @@
       </form>
     </div>
   </div>
+
+  <div class="contact-map">
+    <h2>Find Us</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.963987363525!2d-113.3829896!3d53.4691037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa6f70719dad695f%3A0xee924e9efd9d3a3e!2sGhoman%20IT%20Solutions!5e0!3m2!1sen!2sin!4v1791189281034!5m2!1sen!2sin"
+      title="Map showing Ghoman IT Solutions in Edmonton"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
 </section>
 
 <?= $this->endSection() ?>
@@ -502,4 +540,3 @@
   });
 </script>
 <?= $this->endSection() ?>
-

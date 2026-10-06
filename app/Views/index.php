@@ -652,7 +652,7 @@
   <p data-reveal="fade" data-delay="200">Book a free 30-minute strategy call. No strings attached — just clarity on what's possible.</p>
   <div class="cta-btns" data-reveal="up" data-delay="350">
     <a href="<?= base_url('/contact') ?>" class="btn-white">Get a Free Quote</a>
-    <a href="#services" class="btn-ghost">View Services</a>
+    <a href="<?= route_to('services') ?>" class="btn-ghost">View Services</a>
   </div>
 </section>
 
