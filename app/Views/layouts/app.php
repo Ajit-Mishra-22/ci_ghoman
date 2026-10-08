@@ -162,7 +162,7 @@
             <!-- <div class="logo-icon">GT</div> -->
             <div class="logo-icon1">
                 <img src="<?= base_url('logow1.png') ?>" class="imgw" width="160" alt="Ghoman IT Solutions Logo">
-                <img src="<?= base_url('logob3.png') ?>" class="imgb" width="160" alt="Ghoman IT Solutions Logo">
+                <img src="<?= base_url('logob4.png') ?>" class="imgb" width="160" alt="Ghoman IT Solutions Logo">
             </div>
             
         </a>
