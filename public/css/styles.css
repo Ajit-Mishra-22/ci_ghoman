@@ -73,23 +73,27 @@ body {
     overflow-x: hidden;
 }
 
-nav {
-    position: fixed;
-    top: var(--nav-ribbon-offset, 34px);
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 250;
+}
 
-    left: 0;
-    right: 0;
-    z-index: 200;
-    justify-content: space-between;
-    padding: 0 3%;
-    height: 70px;
-    background: 0 0;
+nav {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0;
+    height: auto;
+    background: transparent;
     transition: background .35s, box-shadow .35s;
 }
 
 nav.scrolled {
-    background: var(--white);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, .08);
+    background: transparent;
+    box-shadow: none;
 }
 
 nav.scrolled .logo-text {
@@ -103,8 +107,8 @@ nav.scrolled .hamburger span {
 /* Mobile: default to white navbar (even before scroll) */
 @media(max-width:900px) {
     nav {
-        background: var(--white);
-        box-shadow: 0 2px 20px rgba(0, 0, 0, .08);
+        background: transparent;
+        box-shadow: none;
     }
 
     nav .logo-text {
@@ -115,13 +119,6 @@ nav.scrolled .hamburger span {
         background: var(--text-dark);
     }
 
-    /* Keep the white logo variant visible on mobile navbar */
-    nav .imgw {
-        display: none !important;
-    }
-    nav .imgb {
-        display: block !important;
-    }
 }
 
 
@@ -132,6 +129,9 @@ nav.scrolled .hamburger span {
 }
 
 .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
@@ -153,19 +153,19 @@ nav.scrolled .nav-link {
 /* Mobile: show hamburger + hide full desktop links */
 @media(max-width:900px){
     .hamburger{display:flex;}
-    .nav-center{position:absolute; left:50%; transform:translateX(-50%);}
+    .nav-center{display:none;}
     .nav-link{display:none;}
 }
 
 /* Extra safety: never show hamburger on desktop */
-@media(min-width:901px){
+@media(min-width:1101px){
     .hamburger{display:none !important;}
 }
 
 
 
 
-/* Default state (no scroll) */
+/* Keep the white logo visible against the dark logo bar. */
 nav .imgw {
     display: block;
 }
@@ -173,12 +173,11 @@ nav .imgb {
     display: none;
 }
 
-/* Scrolled state */
 nav.scrolled .imgw {
-    display: none;
+    display: block;
 }
 nav.scrolled .imgb {
-    display: block;
+    display: none;
 }
 
 
@@ -217,9 +216,62 @@ nav.scrolled .imgb {
 }
 
 .nav-center {
-    position: absolute;
-    left: 36%;
-    /* transform: translateX(-50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: static;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 2%;
+    background: var(--white);
+}
+
+@media (min-width: 1101px) {
+    .nav-link {
+        gap: .25rem;
+        padding: 0 .35rem;
+        font-size: .82rem;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-center {
+        display: none;
+    }
+}
+
+.nav-brand-row {
+    display: flex;
+    width: 100%;
+    min-height: 68px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    background: #0c1b2b;
+}
+
+.nav-center .nav-link {
+    color: var(--text-dark);
+}
+
+.nav-center .nav-link:hover {
+    color: var(--teal-dark);
+}
+
+.nav-brand-row .hamburger span,
+nav.scrolled .nav-brand-row .hamburger span {
+    background: var(--white);
+}
+
+@media (max-width: 1100px) {
+    .nav-center {
+        display: none;
+    }
 }
 
 
@@ -1272,7 +1324,9 @@ footer p.foot-desc {
 }
 
 .drawer-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
     padding: .85rem 1rem;
     border-radius: 10px;
     color: rgba(255, 255, 255, .75);
@@ -1281,6 +1335,11 @@ footer p.foot-desc {
     font-weight: 600;
     border: 1px solid transparent;
     transition: color .2s, border-color .2s, background .2s;
+}
+
+.drawer-link i {
+    width: 1.1rem;
+    text-align: center;
 }
 
 .drawer-link:hover {
@@ -1377,9 +1436,9 @@ footer p.foot-desc {
     }
 
     nav {
-        gap: 1rem;
+        gap: 0;
         flex-wrap: nowrap;
-        padding: 0 4%
+        padding: 0
     }
 
     .nav-center {
@@ -1517,8 +1576,13 @@ footer p.foot-desc {
 
 @media(max-width:600px) {
     nav {
+        padding: 0;
+        height: auto;
+    }
+
+    .nav-brand-row {
+        min-height: 64px;
         padding: 0 5%;
-        height: 64px;
     }
 
     .foot-logo-text,

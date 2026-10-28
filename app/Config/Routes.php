@@ -11,6 +11,7 @@ $routes->get('/contact', 'Contact::index', ['as' => 'contact']);
 $routes->get('/privacy-policy', 'Legal::privacy', ['as' => 'privacy']);
 $routes->get('/terms-and-conditions', 'Legal::terms', ['as' => 'terms']);
 $routes->post('/contact/send', 'Contact::send');
+$routes->post('/chat/respond', 'ChatBot::respond');
 
 // XML sitemap for search engines
 $routes->get('sitemap.xml', 'Sitemap::index');

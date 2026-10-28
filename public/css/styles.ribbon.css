@@ -1,32 +1,32 @@
-/* Offices top ribbon */
-:root{
-  --nav-ribbon-offset: 34px;
+/* Announcement ribbon */
+.top-ribbon{
+  background: #00bfa5;
+  color: #fff;
 }
 
+.top-ribbon-marquee{
+  padding: .45rem 3rem;
+  font-size: .88rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+/* Office contacts and social links in the logo bar */
 .offices-bar{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 250;
-  background: #081a1a;
+  flex: 1;
+  min-width: 0;
+  background: transparent;
   color: rgba(255,255,255,.85);
-  border-bottom: 1px solid rgba(0,191,165,.15);
-}
-
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 3%;
 }
 
 .offices-bar-inner{
-  height: 34px;
+  min-height: 34px;
   display:flex;
   align-items:center;
   justify-content: space-between;
   gap: 1rem;
   font-size: .82rem;
+  padding: 0 1.5rem;
 }
 
 .offices-bar-left{
@@ -95,7 +95,9 @@
 }
 
 @media (max-width: 600px){
-  :root{ --nav-ribbon-offset: 0px; }
-  .offices-bar{display:none;}
+  .nav-brand-row{flex-wrap:wrap;padding-top:.35rem;padding-bottom:.5rem;}
+  .offices-bar{order:3;flex:1 0 100%;}
+  .offices-bar-inner{justify-content:center;padding:.3rem 0 0;font-size:.75rem;}
+  .offices-bar-left{justify-content:center;flex-wrap:wrap;row-gap:.2rem;}
+  .offices-bar-sep{display:none;}
 }
-

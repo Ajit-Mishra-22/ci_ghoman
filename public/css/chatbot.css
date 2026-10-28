@@ -1,0 +1,339 @@
+.lella-chat {
+    --lella-accent: var(--teal, #00bfa5);
+    --lella-ink: #202a35;
+    --lella-muted: #68717b;
+    --lella-border: #dedbd8;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+    font-family: Inter, Poppins, sans-serif;
+}
+
+.lella-panel[hidden] {
+    display: none;
+}
+
+.lella-panel {
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: min(390px, calc(100vw - 32px));
+    height: min(640px, calc(100dvh - 100px));
+    min-height: min(420px, calc(100dvh - 100px));
+    max-height: calc(100dvh - 100px);
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgba(32, 42, 53, .12);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 18px 55px rgba(13, 23, 33, .24);
+}
+
+.lella-header {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 12px;
+    min-height: 82px;
+    padding: 14px 18px;
+    background: #171717;
+    color: #fff;
+}
+
+.lella-avatar {
+    flex: 0 0 auto;
+    display: block;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #f5f4f2;
+}
+
+.lella-header-avatar {
+    width: 54px;
+    height: 54px;
+}
+
+.lella-header-copy {
+    min-width: 0;
+    flex: 1;
+}
+
+.lella-header-copy h2 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0;
+    color: #fff;
+    font-size: 1.12rem;
+    font-weight: 700;
+}
+
+.lella-header-copy p {
+    margin: 5px 0 0;
+    color: rgba(255, 255, 255, .72);
+    font-size: .88rem;
+}
+
+.lella-online-dot,
+.lella-launcher-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #69c99b;
+}
+
+.lella-close {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, .85);
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.lella-welcome {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 22px 22px;
+    background: #f5f4f2;
+    color: var(--lella-ink);
+    text-align: center;
+}
+
+.lella-welcome-avatar {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .13);
+}
+
+.lella-welcome h3 {
+    margin: 0 0 8px;
+    font-size: 1.22rem;
+    line-height: 1.45;
+}
+
+.lella-welcome p {
+    margin: 0 0 5px;
+    font-size: 1.12rem;
+    font-weight: 650;
+}
+
+.lella-welcome > span {
+    max-width: 300px;
+    color: var(--lella-muted);
+    font-size: .93rem;
+    line-height: 1.5;
+}
+
+.lella-messages {
+    display: none;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    padding: 18px 14px;
+    background: #f5f4f2;
+}
+
+.lella-chat.has-messages .lella-welcome {
+    display: none;
+}
+
+.lella-chat.has-messages .lella-messages {
+    display: flex;
+}
+
+.lella-message {
+    max-width: 88%;
+    padding: 11px 13px;
+    border-radius: 14px;
+    font-size: .92rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+
+.lella-message-bot {
+    align-self: flex-start;
+    border: 1px solid #e8e4e1;
+    border-bottom-left-radius: 4px;
+    background: #fff;
+    color: var(--lella-ink);
+}
+
+.lella-message-user {
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+    background: var(--lella-accent);
+    color: #fff;
+}
+
+.lella-message-error {
+    border-color: #efb4a1;
+    color: #8a3215;
+}
+
+.lella-suggestions {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 14px 8px;
+    background: #fff;
+}
+
+.lella-suggestions button {
+    min-height: 38px;
+    padding: 7px 12px;
+    border: 1px solid var(--lella-border);
+    border-radius: 8px;
+    background: #f8f7f6;
+    color: #292929;
+    cursor: pointer;
+    font: inherit;
+    font-size: .86rem;
+    font-weight: 600;
+}
+
+.lella-suggestions button:hover {
+    border-color: var(--lella-accent);
+}
+
+.lella-form {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    padding: 10px 12px 14px;
+    background: #fff;
+}
+
+.lella-form input {
+    width: 0;
+    min-width: 0;
+    flex: 1;
+    height: 58px;
+    padding: 0 16px;
+    border: 1px solid var(--lella-accent);
+    border-radius: 11px;
+    outline: 3px solid rgba(255, 100, 45, .15);
+    color: var(--lella-ink);
+    font: inherit;
+    font-size: 1rem;
+}
+
+.lella-form input:focus {
+    outline-color: rgba(255, 100, 45, .28);
+}
+
+.lella-send {
+    display: grid;
+    flex: 0 0 58px;
+    height: 58px;
+    place-items: center;
+    border: 0;
+    border-radius: 11px;
+    background: var(--lella-accent);
+    color: #fff;
+    cursor: pointer;
+}
+
+.lella-send:disabled {
+    cursor: wait;
+    opacity: .65;
+}
+
+.lella-send svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.lella-launcher {
+    position: relative;
+    display: grid;
+    width: 66px;
+    height: 66px;
+    place-items: center;
+    padding: 0;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 5px 22px rgba(16, 25, 34, .25);
+    cursor: pointer;
+}
+
+.lella-launcher img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lella-launcher-dot {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+}
+
+.lella-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+@media (max-width: 600px) {
+    .lella-chat {
+        right: 14px;
+        bottom: max(14px, env(safe-area-inset-bottom));
+    }
+
+    .lella-panel {
+        right: 14px;
+        bottom: calc(76px + max(14px, env(safe-area-inset-bottom)));
+        display: grid;
+        grid-template-rows: 82px minmax(0, 1fr) auto auto;
+        width: min(390px, calc(100vw - 28px));
+        height: min(680px, calc(100dvh - 130px));
+        min-height: 0;
+        max-height: calc(100dvh - 130px);
+    }
+
+    .lella-header {
+        min-height: 0;
+    }
+
+    .lella-welcome,
+    .lella-messages {
+        min-height: 0;
+    }
+
+    .lella-welcome {
+        overflow-y: auto;
+    }
+}
