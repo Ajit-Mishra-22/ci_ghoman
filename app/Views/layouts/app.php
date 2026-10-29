@@ -130,7 +130,7 @@
 
     <header class="site-header">
     <div class="top-ribbon" role="region" aria-label="Business announcement">
-        <marquee class="top-ribbon-marquee" direction="left" scrollamount="5">Unlock the Future with power of AI 🚀 Save 50% on All Our Services | Transform Your Business Today.</marquee>
+        <marquee class="top-ribbon-marquee" direction="left" scrollamount="5">Unlock the Future with power of AI | Save 50% on All Our Services | Transform Your Business Today.</marquee>
     </div>
     <!-- LOGO BAR AND MENU -->
     <nav id="main-nav">
@@ -138,7 +138,7 @@
             <a href="<?= route_to('home') ?>" class="logo-wrap">
                 <div class="logo-icon1">
                     <img src="<?= base_url('logow1.png') ?>" class="imgw" width="160" alt="Ghoman IT Solutions Logo">
-                    <img src="<?= base_url('logob4.png') ?>" class="imgb" width="160" alt="Ghoman IT Solutions Logo">
+                    <img src="<?= base_url('logow1.png') ?>" class="imgb" width="160" alt="Ghoman IT Solutions Logo">
                 </div>
             </a>
             <div class="offices-bar">
@@ -271,16 +271,16 @@
     <div class="lella-chat" data-endpoint="<?= esc(parse_url(site_url('chat/respond'), PHP_URL_PATH) ?: '/chat/respond', 'attr') ?>">
         <section class="lella-panel" id="lellaPanel" role="dialog" aria-modal="true" aria-labelledby="lellaTitle" aria-hidden="true" hidden>
             <header class="lella-header">
-                <img class="lella-avatar lella-header-avatar" src="<?= base_url('img_lella_chat.png') ?>" alt="">
+                <img class="lella-avatar lella-header-avatar" src="<?= base_url('img_avelia_chat.jpeg') ?>" alt="">
                 <div class="lella-header-copy">
-                    <h2 id="lellaTitle"><span class="lella-online-dot" aria-hidden="true"></span>Leela support</h2>
+                    <h2 id="lellaTitle"><span class="lella-online-dot" aria-hidden="true"></span>Avelia support</h2>
                     <p>Ghoman IT Solutions · Online</p>
                 </div>
                 <button class="lella-close" type="button" aria-label="Close chat">×</button>
             </header>
             <div class="lella-welcome">
-                <img class="lella-avatar lella-welcome-avatar" src="<?= base_url('img_lella_chat.png') ?>" alt="">
-                <h3>Hi, I'm Leela<br>Ghoman IT Solutions' AI assistant</h3>
+                <img class="lella-avatar lella-welcome-avatar" src="<?= base_url('img_avelia_chat.jpeg') ?>" alt="">
+                <h3>Hi, I'm Avelia<br>Ghoman IT Solutions' AI assistant</h3>
                 <p>How can I help your business today?</p>
                 <span>Ask about our services or choose a suggestion to get started.</span>
             </div>
@@ -298,8 +298,10 @@
                 </button>
             </form>
         </section>
-        <button class="lella-launcher" type="button" aria-label="Open Leela chat" aria-expanded="false" aria-controls="lellaPanel">
-            <img src="<?= base_url('img_lella_chat.png') ?>" alt="">
+        <span class="lella-greeting" aria-hidden="true">Hi! How can I help you?</span>
+        <button class="lella-launcher" type="button" aria-label="Open Avelia chat" aria-expanded="false" aria-controls="lellaPanel">
+            <img src="<?= base_url('img_avelia_chat.jpeg') ?>" alt="">
+            <span class="lella-launcher-badge" aria-hidden="true">1</span>
             <span class="lella-launcher-dot" aria-hidden="true"></span>
         </button>
     </div>

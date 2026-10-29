@@ -269,8 +269,8 @@
 .lella-launcher {
     position: relative;
     display: grid;
-    width: 66px;
-    height: 66px;
+    width: 150px;
+    height: 150px;
     place-items: center;
     padding: 0;
     border: 3px solid #fff;
@@ -278,6 +278,41 @@
     background: #fff;
     box-shadow: 0 5px 22px rgba(16, 25, 34, .25);
     cursor: pointer;
+}
+
+.lella-greeting {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 16px);
+    z-index: 1;
+    padding: 10px 20px;
+    transform: translateY(-50%);
+    border-radius: 999px;
+    background: #e52229;
+    box-shadow: 0 5px 18px rgba(16, 25, 34, .2);
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.lella-greeting::after {
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 14px solid #e52229;
+    content: "";
+}
+
+.lella-chat.panel-open .lella-greeting,
+.lella-chat.greeting-dismissed .lella-greeting {
+    display: none;
 }
 
 .lella-launcher img {
@@ -289,11 +324,34 @@
 
 .lella-launcher-dot {
     position: absolute;
-    right: 0;
-    bottom: 1px;
+    right: 20px;
+    bottom: 15px;
     width: 14px;
     height: 14px;
     border: 2px solid #fff;
+}
+
+.lella-launcher-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 35px;
+    height: 35px;
+    place-items: center;
+    transform: translate(-12%, -12%);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #e52229;
+    box-shadow: 0 3px 10px rgba(16, 25, 34, .3);
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.lella-chat.greeting-dismissed:not(.panel-open) .lella-launcher-badge {
+    display: grid;
 }
 
 .lella-sr-only {
@@ -322,6 +380,14 @@
         height: min(680px, calc(100dvh - 130px));
         min-height: 0;
         max-height: calc(100dvh - 130px);
+    }
+
+    .lella-greeting {
+        right: calc(100% + 12px);
+        max-width: calc(100vw - 150px);
+        padding: 13px 16px;
+        font-size: 1rem;
+        white-space: normal;
     }
 
     .lella-header {

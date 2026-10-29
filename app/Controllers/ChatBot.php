@@ -61,7 +61,7 @@ class ChatBot extends BaseController
                 'updated_at' => date('Y-m-d H:i:s'),
             ]);
 
-            $reply = "Nice to meet you, {$name}! I'm Leela, Ghoman IT Solutions' AI assistant. I can help with our AI, software, cloud, cybersecurity, analytics, and web services. What would you like to know?";
+            $reply = "Nice to meet you, {$name}! I'm Avelia, Ghoman IT Solutions' AI assistant. I can help with our AI, software, cloud, cybersecurity, analytics, and web services. What would you like to know?";
             if (empty($visitor['visitor_phone'])) {
                 $reply .= ' Also, what phone number is best for our team to reach you?';
             }
@@ -96,7 +96,23 @@ class ChatBot extends BaseController
         $text = mb_strtolower($message);
 
         if (preg_match('/\A(?:hi|hello|hey|good morning|good afternoon|good evening)[!. ]*\z/', $text)) {
-            return "Hi! I'm Leela, Ghoman IT Solutions' AI assistant. How can I help you today?";
+            return "Hi! I'm Avelia, Ghoman IT Solutions' AI assistant. How can I help you today?";
+        }
+
+        if (preg_match('/\b(?:can|could|would|will|do)\s+you\s+(?:please\s+)?(dance|sing|weep|cry|laugh|smile|scream|shout|whisper|act|perform)\b/', $text, $matches)) {
+            return "I can't {$matches[1]} here, but I can chat with you about it.";
+        }
+
+        if (preg_match('/\b(?:can|could|would|will|do)\s+you\s+(?:really\s+)?(?:feel|be|get)\s+(?:a little\s+)?(happy|sad|angry|afraid|scared|excited|lonely|jealous|proud|embarrassed|worried)\b/', $text, $matches)) {
+            return "I don't experience emotions like {$matches[1]}, but I can talk with you about them.";
+        }
+
+        if (preg_match('/\b(?:are|were)\s+you\s+(?:feeling\s+)?(happy|sad|angry|afraid|scared|excited|lonely|jealous|proud|embarrassed|worried)\b/', $text, $matches)) {
+            return "I don't experience emotions like {$matches[1]}, but I can talk with you about them.";
+        }
+
+        if (preg_match('/\b(?:can|could|would|will|do)\s+you\s+(?:please\s+)?(?:love|hate)\s+(?:me|someone|anyone)\b/', $text)) {
+            return "I don't experience love or hate like a person does, but I can still chat with you and offer support.";
         }
 
         if (preg_match('/\b(contact|email|phone|call|talk to|speak to|address|location|office)\b/', $text)) {

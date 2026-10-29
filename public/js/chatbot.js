@@ -11,6 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const messages = widget.querySelector(".lella-messages");
     const endpoint = widget.dataset.endpoint;
     const visitorKey = "ghoman_chat_visitor_id";
+    const greetingEvents = ["pointerdown", "keydown", "scroll"];
+
+    function dismissGreeting() {
+        widget.classList.add("greeting-dismissed");
+        greetingEvents.forEach((eventName) => {
+            document.removeEventListener(eventName, dismissGreeting, true);
+        });
+    }
+
+    greetingEvents.forEach((eventName) => {
+        document.addEventListener(eventName, dismissGreeting, true);
+    });
 
     function createVisitorId() {
         const bytes = new Uint8Array(16);
